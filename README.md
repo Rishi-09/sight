@@ -12,7 +12,12 @@ This is a **hackathon prototype**. The basic features below are ready to test; a
 
 That's all. The server is already deployed online, so there is nothing else to set up.
 
-- If Android asks to allow installs from Drive or your browser, allow it. If Play Protect warns about an unknown app, tap **More details → Install anyway**. That warning appears for every app installed outside the Play Store. SIGHT contains no malware, ads or trackers.
+- **If you see "your phone currently isn't allowed to install unknown apps from this source":**
+  1. Tap **Settings** on that message.
+  2. Turn on **Allow from this source** (it names the app you're installing from, e.g. Drive or Chrome).
+  3. Go back and tap the app file again. It will install.
+- If **Play Protect** warns about an unknown app, tap **More details → Install anyway**.
+- Both messages appear for every app installed outside the Play Store. SIGHT contains no malware, ads or trackers.
 - **Turn the volume up.** SIGHT speaks all its answers and introduces itself when it opens.
 - The first request after a quiet period may rarely take **30–60 seconds** (the free server wakes up). After that, answers take a few seconds.
 
