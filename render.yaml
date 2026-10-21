@@ -1,0 +1,43 @@
+# Render Blueprint: in the Render dashboard, New > Blueprint, then pick this repository.
+# Values marked `sync: false` are secrets: Render asks for them once and never stores them in git.
+services:
+  - type: web
+    name: sight-backend
+    runtime: docker
+    dockerContext: ./backend
+    dockerfilePath: ./backend/Dockerfile
+    plan: free # sleeps after ~15 min idle; first request then takes ~30-60 s (see docs/DEPLOY.md)
+    region: singapore # closest Render region to the TiDB cluster (Tokyo) and to India
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      # --- AI providers ---
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: openai/gpt-oss-120b
+      - key: GROQ_VISION_MODEL
+        value: qwen/qwen3.8-27b
+      - key: GROQ_STT_MODEL
+        value: whisper-large-v3-turbo
+      - key: OPENROUTER_MODEL
+        value: openai/gpt-oss-120b
+      - key: OPENROUTER_VISION_MODEL
+        value: qwen/qwen3.8-27b
+      - key: PROVIDER_ORDER
+        value: groq,openrouter
+      - key: VISION_PROVIDER
+        value: cloud # "ollama" needs a GPU server, not available on Render
+      # --- Database (TiDB Cloud, Public Endpoint) ---
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: "4000"
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_DATABASE
+        value: sight

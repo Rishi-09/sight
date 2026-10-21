@@ -1,0 +1,11 @@
+backend/.venv/
+backend/.ve/
+backend/.env
+backend/*.db
+__pycache__/
+mobile/.env
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+CLAUDE.md
+docs/

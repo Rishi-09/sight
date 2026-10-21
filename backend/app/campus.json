@@ -1,0 +1,39 @@
+{
+  "_note": "SAMPLE DATA. Replace names, instructions and lat/lng with your real campus route. Walk the route once and record coordinates at each turn.",
+  "start_name": "Main Gate",
+  "destinations": [
+    {
+      "id": "cs_dept",
+      "name": "Computer Science Department",
+      "aliases": ["cs department", "computer science", "cse", "cs block", "cs building"],
+      "route": [
+        {"instruction": "From the main gate, walk straight along the main road for about 100 metres.", "lat": 28.54480, "lng": 77.19250, "landmark_hint": "A security cabin on your right"},
+        {"instruction": "At the fountain roundabout, take the path on the left.", "lat": 28.54560, "lng": 77.19210, "landmark_hint": "You may hear running water from the fountain"},
+        {"instruction": "Continue straight past the canteen for about 60 metres.", "lat": 28.54610, "lng": 77.19160, "landmark_hint": "Canteen on your right, usually noisy and smells of food"},
+        {"instruction": "Turn right at the notice board onto the paved walkway.", "lat": 28.54650, "lng": 77.19140, "landmark_hint": "A large notice board with a sign reading 'Academic Block'"},
+        {"instruction": "Walk about 40 metres. The CS building will be directly ahead.", "lat": 28.54690, "lng": 77.19180, "landmark_hint": "Three-storey building with a ramp on the left of the stairs"}
+      ],
+      "entrance": "Main entrance is glass double doors at the top of 4 steps, with a ramp on the left side. Sign above the door reads 'Department of Computer Science and Engineering'.",
+      "rooms": {
+        "CS-101": "Ground floor. Enter, walk straight 10 metres, first door on the right.",
+        "CS-204": "First floor. Lift is to the left of the entrance. Exit lift, turn right, fourth door on the left.",
+        "lab 3": "Ground floor. Enter, turn left, end of corridor. Door has a 'Lab 3' sign at eye level."
+      }
+    },
+    {
+      "id": "library",
+      "name": "Central Library",
+      "aliases": ["library", "central library", "lib"],
+      "route": [
+        {"instruction": "From the main gate, walk straight along the main road for about 100 metres.", "lat": 28.54480, "lng": 77.19250, "landmark_hint": "A security cabin on your right"},
+        {"instruction": "At the fountain roundabout, take the path on the right.", "lat": 28.54560, "lng": 77.19210, "landmark_hint": "You may hear running water from the fountain"},
+        {"instruction": "Walk straight for about 80 metres. The library is on your left.", "lat": 28.54600, "lng": 77.19320, "landmark_hint": "Quiet area, large building with tall pillars"}
+      ],
+      "entrance": "Entrance is a revolving door between two pillars, with an accessible side door on the right. Sign reads 'Central Library'.",
+      "rooms": {
+        "reading hall": "Ground floor, straight ahead after the security desk.",
+        "reference section": "First floor, turn left at the top of the stairs."
+      }
+    }
+  ]
+}
