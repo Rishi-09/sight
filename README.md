@@ -1,4 +1,4 @@
-# SIGHT: A Voice Assistant for Blind and Low-Vision People
+# SIGHT: a voice assistant for blind and low-vision people
 
 SIGHT is an Android app you **talk to**. It looks through the phone's camera, describes what's in front of you, reads text aloud, remembers where you left things, and can keep watching and warn you about what's ahead. Everything works by voice, so you never need to see the screen.
 
@@ -83,8 +83,7 @@ Some features are **boilerplate**. The structure is there and you can try them, 
 
 ---
 
-<details>
-<summary><b>For developers</b></summary>
+## For Developers
 
 ### Project structure
 
@@ -198,8 +197,6 @@ To install the APK on a connected Android device:
 ```bash
 npm run apk:install
 ```
-
-</details>
 
 ---
 
