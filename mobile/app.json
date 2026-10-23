@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "SIGHT",
+    "slug": "sight",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.sight.assistant",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "SIGHT uses the microphone to hear your voice commands."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SIGHT uses the camera to describe your surroundings and read text."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SIGHT uses your location to guide you along campus routes."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
